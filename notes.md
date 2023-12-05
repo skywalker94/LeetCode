@@ -54,3 +54,25 @@ So now, while iterating through the array, you come across a preexisting complem
 
 </details>
 
+### template problem
+
+<details open>
+<summary>Description</summary>
+
+Description
+
+</details>
+
+<details>
+<summary>Examples</summary>
+
+Examples
+
+</details>
+
+<details>
+<summary>Solution</summary>
+
+Solution
+
+</details>
