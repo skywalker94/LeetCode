@@ -13,4 +13,3 @@ class Solution(object):
             if nums[L//2] < nums[0]:
                 return self.findMin(nums[:(L//2 + 1)])
             return self.findMin(nums[(L//2):])
-        
