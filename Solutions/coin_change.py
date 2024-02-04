@@ -2,7 +2,7 @@
 
 class Solution(object):
     def coinChange(self, coins, amount):
-        dp = [float('inf') for _ in range(amount + 1)]
+        dp = [float('inf')] * (amount + 1)
         dp[0] = 0
         for target in range(1 , amount + 1):
             for c in coins:
