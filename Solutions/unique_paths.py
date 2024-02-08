@@ -13,3 +13,10 @@ class Solution(object):
         elif m <= n:
             return self.combinations(m + n - 2, m - 1)
         return self.combinations(m + n - 2, n - 1)
+
+# MUCH FASTER - math uses 'C' optimisations under the hood. making that way better than using loops in python no matter how optimised
+      
+# import math
+# class Solution(object):
+#     def uniquePaths(self, m, n):
+#         return math.factorial(m + n - 2) / (math.factorial(m - 1) * math.factorial(n - 1))
