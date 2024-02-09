@@ -5,3 +5,8 @@ class Solution(object):
         if num == 0:
             return True
         return num % 10 != 0
+
+# # one liner solution
+# class Solution(object):
+#     def isSameAfterReversals(self, num):
+#         return True if num == 0 else num % 10 != 0
