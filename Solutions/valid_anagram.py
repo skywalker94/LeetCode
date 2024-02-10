@@ -20,3 +20,10 @@ class Solution(object):
                 del letters[char]
 
         return True if len(letters) == 0 else False
+
+# # Pythonic solution using the ''.join(sorted(s))
+# class Solution(object):
+#     def isAnagram(self, s, t):
+#         if len(s) == len(t):
+#             return ''.join(sorted(s)) == ''.join(sorted(t))
+#         return False
