@@ -6,11 +6,11 @@ class Solution(object):
             return 0
         intervals.sort(key=lambda x:x[0])
         deleted = 0
-        last_val = intervals[0][1]
+        final = intervals[0][1]
         for start, end in intervals[1:]:
-            if start >= last_val:
-                last_val = end
+            if start >= final:
+                final = end
             else:
                 deleted += 1
-                last_val = min(end, last_val)
+                final = min(end, final)
         return deleted
