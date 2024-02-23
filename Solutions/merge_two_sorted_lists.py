@@ -30,3 +30,29 @@ class Solution(object):
             current.next = ListNode(v)
             current = current.next
         return head
+
+# # Expected Solution: Only go through the lists. Make fake node to host the 'head'
+# # Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+
+# class Solution(object):
+#     def mergeTwoLists(self, list1, list2):
+#         prehead = ListNode(0)
+#         current = prehead
+#         while list1 and list2:
+#             if list1.val <= list2.val:
+#                 current.next = list1
+#                 list1 = list1.next
+#                 current = current.next
+#             else:
+#                 current.next = list2
+#                 list2 = list2.next
+#                 current = current.next
+#         if not list1 and list2:
+#             current.next = list2
+#         if list1 and not list2:
+#             current.next = list1
+#         return prehead.next
