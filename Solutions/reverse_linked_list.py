@@ -17,3 +17,12 @@ class Solution(object):
             previous = current
             current = next_node
         return previous
+
+# # recursive solution. Faster than the one above, but memory intensive
+# class Solution(object):
+#     def reverseList(self, head, prev = None):
+#         if not head:
+#             return prev
+#         next_node = head.next
+#         head.next = prev
+#         return self.reverseList(next_node, head)
